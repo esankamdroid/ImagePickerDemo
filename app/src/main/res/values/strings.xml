@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImagePickerDemo</string>
+    <string name="open_picker">Open Picker</string>
+</resources>
