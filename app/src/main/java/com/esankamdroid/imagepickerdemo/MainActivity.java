@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity implements ImagePicker.OnGet
 
         imageView = (ImageView) findViewById(R.id.activity_main_iv);
 
-        new ImagePicker.Builder().with(this).setAllowMultipleSelect(true).setOnGetBitmapListener(this).build();
+        new ImagePicker.Builder().with(this).setPackage(getPackageName())
+                .setAllowMultipleSelect(true).setOnGetBitmapListener(this).build();
     }
 
     private void openImagePicker() {
